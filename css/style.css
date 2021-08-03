@@ -1,0 +1,72 @@
+body {
+  max-width: 540px;
+  min-width: 320px;
+  margin: 0 auto;
+  font: normal 16px/1.5 PingFangSC-regular,Tahoma,Lucida Grande,Verdana,Microsoft Yahei,STXihei,hei;
+  color: #000;
+  background: #f2f2f2;
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+a {
+  text-decoration: none;
+}
+div {
+  box-sizing: border-box;
+}
+.serach-top {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 44px;
+  max-width: 540px;
+  min-width: 320px;
+  background-color: #f6f6f6;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+
+}
+.serach-top .user {
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  font-size: 12px;
+  color: #099fde;
+}
+.serach-top .user::before {
+  content: "";
+  display: block;
+  width: 23px;
+  height: 23px;
+  background: url(../images/sprite.png) no-repeat -59px -194px;
+  background-size: 104px auto;
+  margin: 5px auto -2px;
+}
+.serach-top .serach {
+  position: relative;
+  flex: 1;
+  height: 26px;
+  line-height: 24px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 7px 10px;
+  padding-left: 25px;
+  font-size: 12px;
+  color: #666;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+
+}
+.serach-top .serach::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 15px;
+  height: 15px;
+  background: url(../images/sprite.png) no-repeat -59px -278px;
+  background-size: 104px auto;
+
+}
